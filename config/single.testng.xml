@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="3" parallel="tests">
+    <test name="BasicSearchChrome1">
+        <parameter name="config" value="single.conf.json"/>
+        <parameter name="environment" value="chrome1"/>
+        <classes>
+            <class name="com.browserstack.tests.BasicSearchTest"/>
+        </classes>
+    </test>
+    <test name="BasicSearchChrome2">
+        <parameter name="config" value="single.conf.json"/>
+        <parameter name="environment" value="chrome2"/>
+        <classes>
+            <class name="com.browserstack.tests.BasicSearchTest"/>
+        </classes>
+    </test>
+    <test name="BasicSearchChrome3">
+        <parameter name="config" value="single.conf.json"/>
+        <parameter name="environment" value="chrome3"/>
+        <classes>
+            <class name="com.browserstack.tests.BasicSearchTest"/>
+        </classes>
+    </test>
+</suite>

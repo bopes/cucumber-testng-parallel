@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel]" parallel="tests">
+  <test name="BasicSearchChrome3(failed)" parallel="tests">
+    <parameter name="environment" value="chrome3"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.browserstack.tests.BasicSearchTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.browserstack.tests.BasicSearchTest -->
+    </classes>
+  </test> <!-- BasicSearchChrome3(failed) -->
+  <test name="BasicSearchChrome2(failed)" parallel="tests">
+    <parameter name="environment" value="chrome2"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.browserstack.tests.BasicSearchTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.browserstack.tests.BasicSearchTest -->
+    </classes>
+  </test> <!-- BasicSearchChrome2(failed) -->
+  <test name="BasicSearchChrome1(failed)" parallel="tests">
+    <parameter name="environment" value="chrome1"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.browserstack.tests.BasicSearchTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.browserstack.tests.BasicSearchTest -->
+    </classes>
+  </test> <!-- BasicSearchChrome1(failed) -->
+</suite> <!-- Failed suite [Parallel] -->

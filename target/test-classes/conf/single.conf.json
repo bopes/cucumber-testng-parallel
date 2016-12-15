@@ -1,0 +1,32 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "charlielee3",
+  "key": "k5U39Kts49R5EGbUQMPn",
+
+  "capabilities": {
+    "project": "Charlie100",
+    "build": "Java - Cucumber/TestNG/Single",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome1": {
+      "browser": "chrome",
+      "browser_version": "53.0",
+      "os": "Windows",
+      "os_version": "7"
+    },
+    "chrome2": {
+      "browser": "chrome",
+      "browser_version": "53.0",
+      "os": "Windows",
+      "os_version": "7"
+    },
+    "chrome3": {
+      "browser": "chrome",
+      "browser_version": "53.0",
+      "os": "Windows",
+      "os_version": "7"
+    }
+  }
+}

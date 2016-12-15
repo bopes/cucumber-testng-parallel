@@ -1,0 +1,4 @@
+com/browserstack/tests/BasicSearchTest.class
+com/browserstack/steps/BasicSearch.class
+com/browserstack/tests/BrowserStackTest.class
+com/browserstack/steps/BrowserStackSteps.class
